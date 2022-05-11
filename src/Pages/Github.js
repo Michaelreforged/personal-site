@@ -1,6 +1,7 @@
 import React from "react";
 import { data } from "../Data/github_projects";
-import '../Components/css/project.css'
+import '../StylingSheets/project.sass'
+
 const GitHub = () => {
 
   const renderProjects = () =>{
