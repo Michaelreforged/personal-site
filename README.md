@@ -5,3 +5,5 @@
 - Axios
 - React Router
 - React Router Dom
+- SASS
+- Styled Components
