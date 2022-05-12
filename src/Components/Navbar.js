@@ -1,16 +1,17 @@
 import React from "react";
 import { Outlet } from "react-router";
 import { MainDiv } from "./StyledDivs";
-import {StyledNLink, NavDiv} from "./NavStyling"
+import { Link } from "react-router-dom";
+import "../StylingSheets/nav.sass"
 
 const Navbar = () => {
   return (
     <>
-      <NavDiv>
-        <StyledNLink to="/">Home</StyledNLink>
-        <StyledNLink to="/github">GitHub</StyledNLink>
-        <StyledNLink to="/about">About</StyledNLink>
-      </NavDiv>
+      <div className="navDiv">
+        <Link className="link" to="/">Home</Link>
+        <a className="link" href='https://github.com/Michaelreforged'>GitHub</a>
+        <Link className="link" to="/about">About</Link>
+      </div>
       <MainDiv>
         <Outlet />
       </MainDiv>
