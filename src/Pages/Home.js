@@ -21,6 +21,8 @@ const Home = () => {
   return(
     <>
       <h1> Welcome to Michael Cheung's Portfolio Site.</h1>
+      <hr style={{border:'1px solid black'}}></hr>
+      <p> Please see below for some of the projects that I have worked on/is currently working on. Demos are currently in progess but will be filled out with react components to do stuff.</p>
       <h1> Projects and GitHub Repos</h1>
       <div className="containerDiv">
         {renderProjects()}
