@@ -5,10 +5,10 @@ import '../StylingSheets/project.sass'
 const Home = () => {
   const renderProjects = () =>{
     return data.map((project)=>(
-      <div className={`project${project.id}`} key={project.id}>
+      <div className={`project`} key={project.id}>
         <h2>{project.name}</h2>
         <hr/>
-        <div className={`description${project.id}`}>
+        <div className={`description`}>
           <p>{project.desciption}</p>
         </div>
         <hr/>

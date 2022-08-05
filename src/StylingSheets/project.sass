@@ -1,10 +1,11 @@
+@import "./color" 
+
 $project-margin: 10px
 $project-padding: 10px
 $container-width: calc(90% - 10*$project-margin)
 $project-height: fit-content(20em)
-$project-width: calc($container-width/4)
+$project-width: auto
 $project-minwidth: 220px
-$project-bg: #b0d7ff
 $project-border: solid black 2px
 $project-radius: 10px
 $project-hr: 2px solid black
@@ -16,9 +17,7 @@ $project-on-hover: all 1s ease-in-out
   padding: 0px 10px 10px 10px
   flex-wrap: wrap
 
-/* ----------- Project Div Separator Beginning of 1 --------------
-
-.project1
+.project
   padding: $project-padding
   margin: $project-margin
   border: $project-border
@@ -34,7 +33,7 @@ $project-on-hover: all 1s ease-in-out
     white-space: nowrap
     text-overflow: ellipsis
 
-.description1
+.description
   max-height: 4em
   min-height: 4em
   transition: all 0.1s ease-in-out
@@ -46,105 +45,5 @@ $project-on-hover: all 1s ease-in-out
 
     p
       overflow: hidden
-      white-space: normal
-
-/* ----------- Project Div Separator Ending of 1 --------------
-/* ----------- Project Div Separator Beginning of 2 --------------
-
-.project2
-  padding: $project-padding
-  margin: $project-margin
-  border: $project-border
-  border-radius: $project-radius
-  width: $project-width
-  max-height: $project-height
-  min-width: $project-minwidth
-  background-color: $project-bg
-  hr
-    border-top: $project-hr
-  p
-    overflow: hidden
-    white-space: nowrap
-    text-overflow: ellipsis
-
-.description2
-  max-height: 4em
-  min-height: 4em
-  transition: all 0.1s ease-in-out
-  overflow: hidden
-
-  &:hover
-    max-height: 100%
-    transition: $project-on-hover
-
-    p
-      overflow: hidden
-      white-space: normal
-
-/* ----------- Project Div Separator Ending of 2 --------------
-/* ----------- Project Div Separator Beginning of 3 --------------
-
-.project3
-  padding: $project-padding
-  margin: $project-margin
-  border: $project-border
-  border-radius: $project-radius
-  width: $project-width
-  min-width: $project-minwidth
-  max-height: $project-height
-  background-color: $project-bg
-  hr
-    border-top: $project-hr
-  p
-    overflow: hidden
-    white-space: nowrap
-    text-overflow: ellipsis
-
-.description3
-  max-height: 4em
-  min-height: 4em
-  transition: all 0.1s ease-in-out
-  overflow: hidden
-
-  &:hover
-    max-height: 100%
-    transition: $project-on-hover
-
-    p
-      overflow: hidden
-      white-space: normal
-
-/* ----------- Project Div Separator Ending of 3 --------------
-/* ----------- Project Div Separator Beginning of 4 --------------
-
-.project4
-  padding: $project-padding
-  margin: $project-margin
-  border: $project-border
-  border-radius: $project-radius
-  width: $project-width
-  max-height: $project-height
-  min-width: $project-minwidth
-  background-color: $project-bg
-  hr
-    border-top: $project-hr
-  p
-    overflow: hidden
-    white-space: nowrap
-    text-overflow: ellipsis
-
-.description4
-  max-height: 4em
-  min-height: 4em
-  transition: all 0.1s ease-in-out
-  overflow: hidden
-
-  &:hover
-    max-height: 100%
-    transition: $project-on-hover
-
-    p
-      overflow: hidden
-      white-space: normal
-
-/* ----------- Project Div Separator Ending of 4 --------------
+      white-space: normal 
+      

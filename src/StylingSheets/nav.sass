@@ -1,4 +1,9 @@
+@import "./color" 
+@import "./media" 
 
+$page-max-width: 1700px
+$footer-height: 4rem
+  
 .link
   padding: 0px 20px 0px 20px
   text-decoration: none
@@ -7,6 +12,45 @@
   font-weight: 600
 
 .navDiv
+  display: flex
+  justify-content: center
   padding: 10px 10px 10px 10px
   margin-top: 10px
-  background-color: #C3E8BD
+  background-color: $nav-color
+  @media screen and (max-width: $xsm-min-device) 
+    flex-direction: row
+    flex-wrap: wrap
+  @media screen and (max-width: $sm-min-device) 
+    flex-direction: row
+    flex-wrap: wrap
+  
+
+.footerDiv
+  display: flex
+  justify-content: center
+  margin-left: auto
+  margin-right: auto
+  background-color: $nav-color
+  max-width: $page-max-width
+  width: 90vw
+  position: absolute
+  bottom: 0
+  height: $footer-height
+
+
+.outletDiv
+  padding: 0px 10px 10px 10px
+  background-color: $main-color
+  height: 90%
+  margin-top: 20px
+  margin-bottom: calc($footer-height + 10px)
+  position: relative
+
+.main
+  display: flex
+  flex-direction: column
+  width: 90vw
+  max-width: $page-max-width
+  margin: auto
+  min-height: 100vh
+  position: relative
