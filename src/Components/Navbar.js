@@ -2,11 +2,11 @@ import React from "react";
 import Footer from "./Footer"
 import { Outlet } from "react-router";
 import { Link } from "react-router-dom";
-import "../StylingSheets/nav.sass"
+import "../StylingSheets/main.scss"
 
 const Navbar = () => {
   return (
-    <div className="main">
+    <div className="main theme-onix">
       <div className="navDiv">
         <Link className="link" to="/">Home</Link>
         <a className="link" href='https://github.com/Michaelreforged'>GitHub</a>

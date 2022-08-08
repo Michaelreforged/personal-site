@@ -1,0 +1,25 @@
+@use "./themify" as *;
+@use "./themes" as *;
+@use "./nav.scss" as *;
+@use "./project.scss" as *;
+
+.navDiv{
+  @include themify($themes){
+    background-color: themed('nav-color');
+  }
+}
+.outletDiv{
+  @include themify($themes){
+    background-color: themed('main-color');
+  }
+}
+.footerDiv{
+  @include themify($themes){
+    background-color: themed('nav-color');
+  }
+}
+.projectDiv{
+  @include themify($themes){
+    background-color: themed('project-bg');
+  }
+}

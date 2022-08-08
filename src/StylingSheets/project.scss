@@ -1,0 +1,57 @@
+@use "./themify" as *;
+@use "./themes" as *;
+
+
+$project-margin: 10px;
+$project-padding: 10px;
+$container-width: calc(90% - 10*$project-margin);
+$project-height: fit-content(20em);
+$project-width: auto;
+$project-minwidth: 220px;
+$project-border: solid black 2px;
+$project-radius: 10px;
+$project-hr: 2px solid black;
+$project-on-hover: all 1s ease-in-out;
+
+.containerDiv{
+  display: flex;
+  justify-content: center;
+  padding: 0px 10px 10px 10px;
+  flex-wrap: wrap;
+
+  
+}
+.projectDiv{
+  padding: $project-padding;
+  margin: $project-margin;
+  border: $project-border;
+  border-radius: $project-radius;
+  width: $project-width;
+  max-height: $project-height;
+  min-width: $project-minwidth;
+
+  hr{
+    border-top: $project-hr;
+  }
+
+  p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+.description{
+  max-height: 4em;
+  min-height: 4em;
+  transition: all 0.1s ease-in-out;
+  overflow: hidden;
+
+  &:hover{
+    max-height: 100%;
+    transition: $project-on-hover;
+  }
+    p{
+      overflow: hidden;
+      white-space: normal;
+      }
+}
