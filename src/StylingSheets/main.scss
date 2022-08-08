@@ -13,18 +13,39 @@
     }
   }
 }
+
 .outletDiv{
   @include themify($themes){
     background-color: themed('main-color');
+    color: themed('text-color');
+
+    hr{
+      border: themed('hr-border');
+    }
   }
 }
+
 .footerDiv{
   @include themify($themes){
     background-color: themed('nav-color');
   }
 }
+
 .projectDiv{
   @include themify($themes){
     background-color: themed('project-bg');
+  }
+}
+
+
+
+select{
+  font-weight: 600;
+  font-size: larger;
+  right:20px;
+  position: absolute;
+  @include themify($themes){
+    background-color: themed('nav-color');
+    color: themed('nav-text-color')
   }
 }

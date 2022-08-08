@@ -1,10 +1,18 @@
 
   export const data = [
     { 
+      id:0,
+      name: 'DPL Summer 2022 Review Repo',
+      link: 'https://github.com/Michaelreforged/DPL_Summer_2022_Review',
+      desciption:'Review repo made to help DevPoint Labs students during the summer of 2022. Points covered in the reviews are: array manipulation with games, useState, useEffect, props handling, useContext, react router, has_many, normalization, validation on rails, 3rd party libraries for pagination, infinite scrolling, and luxon/moment for time manipulation.',
+      isLive: false,
+      hosting: null
+    },
+    { 
       id:1,
       name: 'DPL Spring 2022 Review Repo',
       link: 'https://github.com/Michaelreforged/Review_Spring_22',
-      desciption:'Review repo made to help DevPoint Labs students during the spring of 2022. Points covered in the repo are: API calls with axios, react router setup, CRUD (Create, Read, Update, Delete) actions for rails and react, has_many/has_one relations, validations, simple SQL, 3rd party library implementation for paginations and infinite scrolling, notifications, and frontend normalization of data.',
+      desciption:'Review repo made to help DevPoint Labs students during the spring of 2022. Points covered in the repo are: API calls with axios, react router setup, CRUD (Create, Read, Update, Delete) actions for rails and react, has_many/has_one relations, validations, simple SQL, frontend normalization of data, notifications, 3rd party library implementation for paginations and infinite scrolling.',
       isLive: false,
       hosting: null
     },

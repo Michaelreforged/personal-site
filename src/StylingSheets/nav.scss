@@ -9,6 +9,7 @@ $footer-height: 4rem;
   justify-content: center;
   padding: 10px 10px 10px 10px;
   margin-top: 10px;
+  align-items: center;
   @media screen and (max-width: $xsm-min-device) {
     flex-direction: row;
     flex-wrap: wrap;
@@ -35,6 +36,7 @@ $footer-height: 4rem;
   position: absolute;
   bottom: 0;
   height: $footer-height;
+  align-items: center;
 }
 
 .outletDiv{
@@ -44,6 +46,7 @@ $footer-height: 4rem;
   margin-bottom: calc($footer-height + 10px);
   position: relative;
 }
+
 .main{
   display: flex;
   flex-direction: column;
