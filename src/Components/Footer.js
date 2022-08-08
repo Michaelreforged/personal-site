@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "../StylingSheets/nav.sass"
+import "../StylingSheets/main.scss"
 
 const Footer = () => {
   return (

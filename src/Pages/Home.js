@@ -1,11 +1,11 @@
 import React from "react";
 import { data } from "../Data/github_projects";
-import '../StylingSheets/project.sass'
+import '../StylingSheets/main.scss'
 
 const Home = () => {
   const renderProjects = () =>{
     return data.map((project)=>(
-      <div className={`project`} key={project.id}>
+      <div className={`projectDiv`} key={project.id}>
         <h2>{project.name}</h2>
         <hr/>
         <div className={`description`}>
