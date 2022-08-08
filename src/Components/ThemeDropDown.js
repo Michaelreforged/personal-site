@@ -2,30 +2,30 @@ import { useContext } from "react"
 import { ThemeContext } from "../Providers/ThemeProvider"
 
 const themes = [
-  'onix',
-  'houndour'
+ {disabled:'true', value:'',text:'Choose a Theme'},
+  {value:'onix', text:'Onix (Default)'},
+  {value:'houndour',text:'Houndour'}
 ]
 
 const ThemeDropDown = () =>{
-  const {setTheme} = useContext(ThemeContext)
+  const {theme, setTheme} = useContext(ThemeContext)
   const Options = ()=>(
-    themes.map((theme)=>{
+    themes.map(({value,text,disabled})=>{
       return(
-      <option value={theme} key={theme}>{theme}</option>
+      <option disabled={disabled} value={value} key={value}>{text}</option>
       )
     })
   )
 
-    const ChooseTheme =(e)=>{
-      console.log(e.target.value)
-      setTheme(e.target.value)
-      localStorage.setItem('theme', e.target.value)
-    }
+  const ChooseTheme =(e)=>{
+    console.log(e.target.value)
+    setTheme(e.target.value)
+    localStorage.setItem('theme', e.target.value)
+  }
 
   return(
     <>
-    <select onChange={ChooseTheme}>
-      <option value={null}>Choose a Theme</option>
+    <select value={theme} onChange={ChooseTheme}>
       <Options/>
     </select>
     </>
