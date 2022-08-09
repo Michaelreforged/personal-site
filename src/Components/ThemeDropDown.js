@@ -2,7 +2,7 @@ import { useContext } from "react"
 import { ThemeContext } from "../Providers/ThemeProvider"
 
 const themes = [
- {disabled:'true', value:'',text:'Choose a Theme'},
+ {disabled:true, value:'',text:'Choose a Theme'},
   {value:'onix', text:'Onix (Default)'},
   {value:'zekrom',text:'Zekrom'}
 ]
