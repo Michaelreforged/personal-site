@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import "../StylingSheets/main.scss"
 import { ThemeContext } from "../Providers/ThemeProvider";
 import ThemeDropDown from "./ThemeDropDown";
+import External from "../Components/external";
 
 
 const Navbar = () => {
@@ -14,7 +15,7 @@ const Navbar = () => {
     <div className="main">
       <div className="navDiv">
         <Link className="link" to="/">Home</Link>
-        <a className="link" href='https://github.com/Michaelreforged'>GitHub</a>
+        <a className="link" href='https://github.com/Michaelreforged'>GitHub <External/></a>
         <Link className="link" to="/demos">Demos</Link>
         <Link className="link" to="/about">About</Link>
         <ThemeDropDown/>

@@ -37,6 +37,12 @@ $footer-height: 4rem;
   bottom: 0;
   height: $footer-height;
   align-items: center;
+  .link{
+    padding: 0px 20px 0px 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
 }
 
 .outletDiv{

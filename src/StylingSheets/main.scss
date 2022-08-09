@@ -29,6 +29,11 @@
   @include themify($themes){
     background-color: themed('nav-color');
   }
+  .link{
+    @include themify($themes){
+      color: themed('nav-text-color');
+    }
+  }
 }
 
 .projectDiv{
@@ -49,3 +54,14 @@ select{
     color: themed('nav-text-color')
   }
 }
+
+.external{
+  width: 15px;
+  height: 15px;
+  line{
+    @include themify($themes){
+      stroke: themed('nav-text-color')
+    }
+  }
+}
+
