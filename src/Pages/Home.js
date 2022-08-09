@@ -9,7 +9,7 @@ const Home = () => {
       <div className={`projectDiv`} key={project.id}>
         <h2>{project.name}</h2>
         <hr />
-        <div className={`description`}>
+        <div>
           <p>{project.desciption}</p>
         </div>
         <hr />

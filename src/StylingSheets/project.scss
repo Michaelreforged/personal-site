@@ -3,7 +3,7 @@
 
 
 $project-margin: 10px;
-$project-padding: 10px;
+$project-padding: 0px 20px 20px 20px;
 $container-width: calc(90% - 10*$project-margin);
 $project-height: fit-content(20em);
 $project-width: auto;
@@ -33,24 +33,4 @@ $project-on-hover: all 1s ease-in-out;
     border: $project-hr;
   }
 
-  p{
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-}
-.description{
-  max-height: 3.5em;
-  min-height: 3.5em;
-  transition: all 0.1s ease-in-out;
-  overflow: hidden;
-
-  &:hover{
-    max-height: 100%;
-    transition: $project-on-hover;
-  }
-  p{
-    overflow: hidden;
-    white-space: normal;
-  }
 }
