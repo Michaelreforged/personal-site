@@ -2,6 +2,7 @@
 @use "./themes" as *;
 @use "./nav.scss" as *;
 @use "./project.scss" as *;
+@use "./grid.scss" as *;
 
 .navDiv{
   @include themify($themes){
@@ -55,6 +56,17 @@ select{
   line{
     @include themify($themes){
       stroke: themed('nav-text-color')
+    }
+  }
+}
+
+.tic-tac-grid{
+  border-width: 2px;
+  border-style: solid;
+  div{
+    @include themify($themes){
+      background-color: themed('nav-color');
+      border-color: themed("text-color");
     }
   }
 }
