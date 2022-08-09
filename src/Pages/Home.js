@@ -14,7 +14,7 @@ const Home = () => {
         <hr/>
         <a href={project.link}>Link to Repo</a>
         <br/>
-        {project.isLive?<a href={project.link}>Link to Repo</a>: null}
+        {project.isLive?<a href={project.link}>Link to Live Site on Heroku</a>: null}
       </div>
     ))
   }
