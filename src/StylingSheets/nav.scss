@@ -10,11 +10,7 @@ $footer-height: 4rem;
   padding: 10px 10px 10px 10px;
   margin-top: 10px;
   align-items: center;
-  @media screen and (max-width: $xsm-min-device) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    }
-  @media screen and (max-width: $sm-min-device) {
+  @media screen and (max-width: $m-min-device) {
     flex-direction: row;
     flex-wrap: wrap;
     }
@@ -24,6 +20,16 @@ $footer-height: 4rem;
     font-size: 1.5em;
     font-weight: 600;
   }
+  select{
+    font-weight: 600;
+    font-size: larger;
+    right:20px;
+    position: absolute;
+    @media screen and (max-width: $lg-min-device) {
+      position: relative;
+      right: auto;
+      }
+    }
 }
 
 .footerDiv{
@@ -43,6 +49,21 @@ $footer-height: 4rem;
     font-size: 1.5em;
     font-weight: 600;
   }
+  @media screen and (max-width: $m-min-device) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 6rem;
+    }
+  select{
+    font-weight: 600;
+    font-size: larger;
+    right:20px;
+    position: absolute;
+    @media screen and (max-width: $lg-min-device) {
+      position: relative;
+      right: auto;
+      }
+    }
 }
 
 .outletDiv{
@@ -51,6 +72,9 @@ $footer-height: 4rem;
   margin-top: 20px;
   margin-bottom: calc($footer-height + 10px);
   position: relative;
+  @media screen and (max-width: $xsm-min-device) {
+    margin-bottom: calc(6rem + 10px);
+    }
 }
 
 .main{
@@ -61,4 +85,5 @@ $footer-height: 4rem;
   margin: auto;
   min-height: 100vh;
   position: relative;
+  
 }
