@@ -1,10 +1,16 @@
 .tic-tac-grid {
   display: grid;
-  grid-template-columns: auto auto auto ;
-  
+  grid-template-columns: repeat(3, 1fr) ;
+  max-width: fit-content;
+  margin: auto;
   div {
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     border: 1px black solid;
     padding: 10px;
   }
 }
+

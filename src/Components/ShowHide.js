@@ -3,8 +3,6 @@ import { useState } from "react"
 const ShowHide = ({title, children}) =>{
   const [show, setShow] = useState(false)
 
-  
-
   return(
     <>
     <h2>{title} Demo</h2>

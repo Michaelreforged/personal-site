@@ -71,3 +71,9 @@ select{
   }
 }
 
+a{
+  text-decoration: none;
+  @include themify($themes){
+    color: themed('text-color');
+  }
+}
