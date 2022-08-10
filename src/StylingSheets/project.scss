@@ -8,7 +8,6 @@ $container-width: calc(90% - 10*$project-margin);
 $project-height: fit-content(20em);
 $project-width: auto;
 $project-minwidth: 220px;
-$project-border: 2px solid black;
 $project-radius: 10px;
 $project-hr: 1px solid black;
 $project-on-hover: all 1s ease-in-out;
@@ -23,12 +22,10 @@ $project-on-hover: all 1s ease-in-out;
 .projectDiv{
   padding: $project-padding;
   margin: $project-margin;
-  border: $project-border;
   border-radius: $project-radius;
   width: $project-width;
   max-height: $project-height;
   min-width: $project-minwidth;
-
   hr{
     border: $project-hr;
   }

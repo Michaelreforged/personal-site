@@ -40,6 +40,7 @@
 .projectDiv{
   @include themify($themes){
     background-color: themed('project-bg');
+    border: themed("project-border");
   }
 }
 
@@ -70,6 +71,18 @@ select{
     }
   }
 }
+
+.mem-grid{
+  border-width: 2px;
+  border-style: solid;
+  div{
+    @include themify($themes){
+      background-color: themed('nav-color');
+      border-color: themed("text-color");
+    }
+  }
+}
+
 
 a{
   text-decoration: none;

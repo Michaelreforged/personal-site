@@ -1,4 +1,5 @@
 import React from "react";
+import Memory from "../Components/demos/MemoryGame/MemoryGame";
 import TicTacToe from "../Components/demos/TicTacToe";
 import ShowHide from "../Components/ShowHide";
 
@@ -9,7 +10,7 @@ const Demo = () => {
       <hr/>
       <ShowHide title={"Tic-Tac-Toe"}><TicTacToe/></ShowHide>
       <hr/>
-      <h2>More to be added</h2>
+      <ShowHide title={"Memory Game Matching"}><Memory/></ShowHide>
     </div>
   )
 };
