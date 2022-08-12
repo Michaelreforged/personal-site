@@ -16,7 +16,6 @@ const Memory = () => {
     }
     flip(ind);
     reveal.push(ind);
-    console.log(reveal.length);
     if (reveal.length <= 1) {
       setReveal(reveal);
       return;

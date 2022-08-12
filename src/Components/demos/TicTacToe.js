@@ -21,7 +21,6 @@ function TicTacToe() {
   ]
 
   const checkWinner = () =>{
-    console.log(turn)
     wins.forEach((win)=>{
       if(space[win[0]] === space[win[1]] && space[win[0]] === space[win[2]] && space[win[0]] !== "Click Me"){
         setWinner(`Player ${space[win[0]].toUpperCase()}`)

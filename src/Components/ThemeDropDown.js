@@ -20,7 +20,6 @@ const ThemeDropDown = () =>{
   )
 
   const ChooseTheme =(e)=>{
-    console.log(e.target.value)
     setTheme(e.target.value)
     localStorage.setItem('theme', e.target.value)
   }

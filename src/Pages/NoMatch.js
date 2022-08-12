@@ -3,7 +3,6 @@ import {useLocation} from "react-router"
 
 const NoMatch = () =>{
   const loc = useLocation();
-  console.log(loc)
 
   return(
     <div>
