@@ -1,5 +1,6 @@
 @use "./themify" as *;
 @use "./themes" as *;
+@use "./media" as *;
 
 
 $project-margin: 10px;
@@ -26,8 +27,12 @@ $project-on-hover: all 1s ease-in-out;
   width: $project-width;
   max-height: $project-height;
   min-width: $project-minwidth;
+
   hr{
     border: $project-hr;
   }
-
+  @media screen and (max-width: $m-min-device) {
+    margin: auto;
+    margin-bottom: 20px;
+  }
 }

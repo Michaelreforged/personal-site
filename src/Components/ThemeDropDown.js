@@ -3,8 +3,10 @@ import { ThemeContext } from "../Providers/ThemeProvider"
 
 const themes = [
  {disabled:true, value:'',text:'Choose a Theme'},
-  {value:'onix', text:'Onix (Default)'},
-  {value:'zekrom',text:'Zekrom'}
+ {value:'light',text:'Light'},
+  {value:'onix', text:'Onix'},
+  {value:'zekrom',text:'Zekrom'},
+  {value:'slate',text:'Slate'},
 ]
 
 const ThemeDropDown = () =>{

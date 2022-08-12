@@ -52,7 +52,7 @@ const Memory = () => {
     return spaces.map((space, ind) => {
       return (
         <div key={ind} onClick={() => check(ind)}>
-          <h1>{space.flipped ? space.value : "flip"}</h1>
+          <h3>{space.flipped ? space.value : "flip"}</h3>
         </div>
       );
     });
@@ -60,6 +60,7 @@ const Memory = () => {
 
   const reset = () => {
     let newGame = createStart();
+    setReveal([])
     setSpaces(newGame);
     setTurn(0)
     setPlayer([0,0])
@@ -71,7 +72,7 @@ const Memory = () => {
       <p>{turn%2 === 0 ? "Player One's Turn": "Player Two's Turn"}</p>
       <p>Player One: {player[0]} Player Two: {player[1]}</p>
       <div className="mem-grid">{renderSpace()}</div>
-      <button onClick={reset}>Reset Game</button>
+      <button style={{display:'flex',margin:"0 auto"}} onClick={reset}>Reset Game</button>
     </div>
   );
 };

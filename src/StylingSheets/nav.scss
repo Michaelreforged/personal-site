@@ -2,6 +2,7 @@
 
 $page-max-width: 1700px;
 $footer-height: 4rem;
+$text-offset: 10px;
   
 
 .navDiv{
@@ -50,6 +51,7 @@ $footer-height: 4rem;
     font-weight: 600;
   }
   @media screen and (max-width: $m-min-device) {
+    width: auto;
     flex-direction: row;
     flex-wrap: wrap;
     height: 6rem;
@@ -72,9 +74,24 @@ $footer-height: 4rem;
   margin-top: 20px;
   margin-bottom: calc($footer-height + 10px);
   position: relative;
+  h1 {
+    margin-left: $text-offset;
+  }
+  h2 {
+    margin-left: $text-offset;
+  }
+  p {
+    margin-left: $text-offset*2;
+  }
+  a {
+    margin-left: $text-offset*2;
+  }
+  @media screen and (max-width: $m-min-device) {
+    padding: 0px 30px 10px 30px;
+  }
   @media screen and (max-width: $xsm-min-device) {
     margin-bottom: calc(6rem + 10px);
-    }
+  }
 }
 
 .main{
@@ -85,5 +102,7 @@ $footer-height: 4rem;
   margin: auto;
   min-height: 100vh;
   position: relative;
-  
+  @media screen and (max-width: $m-min-device) {
+    width: 100vw;
+  }
 }

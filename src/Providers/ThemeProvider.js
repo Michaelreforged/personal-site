@@ -10,9 +10,9 @@ const ThemeProvider = (props) =>{
     if(localStorage.getItem('theme')){
       return localStorage.getItem('theme')
     } else if(device){
-      return 'zekrom'
+      return 'slate'
     } else{
-      return "onix"
+      return 'light'
     }
   }
   const [theme, setTheme] = useState(themeCheck())

@@ -20,5 +20,25 @@ $themes:(
     "text-color": #decdcd,
     "hr-border": 1px solid #decdcd,
     "project-border": 4px solid #313139,
-  )
+  ),
+  'slate':(
+    "main-bg-color": #151B26,
+    "main-color": #586473,
+    "nav-color": #2C3540,
+    "project-bg": #3F4859,
+    "nav-text-color": #b5c6db,
+    "text-color": #b5c6db,
+    "hr-border": 1px solid #8694A6,
+    "project-border": 4px solid #313139,
+  ),
+  'light':(
+    "main-bg-color": #F0F2F2,
+    "main-color": #D2D7D9,
+    "nav-color": #B8BEBF,
+    "project-bg": #848B8C,
+    "nav-text-color": #000,
+    "text-color": #000,
+    "hr-border": 1px solid #000,
+    "project-border": 4px solid #595959,
+  ),
 )

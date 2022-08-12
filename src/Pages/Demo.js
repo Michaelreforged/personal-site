@@ -10,7 +10,7 @@ const Demo = () => {
       <hr/>
       <ShowHide title={"Tic-Tac-Toe"}><TicTacToe/></ShowHide>
       <hr/>
-      <ShowHide title={"Memory Game Matching"}><Memory/></ShowHide>
+      <ShowHide title={"Memory Game: Matching"}><Memory/></ShowHide>
     </div>
   )
 };

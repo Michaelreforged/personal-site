@@ -15,19 +15,19 @@ function TicTacToe() {
   });
   const [turn, setTurn] = useState(0)
   const [winner, setWinner] = useState(null)
-  const [winState, setWinState] = useState([])
+  const [show, setShow] = useState(false)
   const wins = [
     [1,2,3], [1,4,7], [1,5,9], [2,5,8], [4,5,6], [7,8,9], [3,6,9], [3,5,7] 
   ]
 
   const checkWinner = () =>{
+    console.log(turn)
     wins.forEach((win)=>{
       if(space[win[0]] === space[win[1]] && space[win[0]] === space[win[2]] && space[win[0]] !== "Click Me"){
         setWinner(`Player ${space[win[0]].toUpperCase()}`)
-        setWinState(win)
       }
     })
-    if(turn >= 8){
+    if(turn === 8  && winner == null){
       setWinner('No one')
     }
   }
@@ -53,6 +53,7 @@ function TicTacToe() {
 
   const reset = () =>{
     setWinner(null)
+    setShow(false)
     setTurn(0)
     setSpace({
       1: 'Click Me',
@@ -65,22 +66,29 @@ function TicTacToe() {
       8: 'Click Me',
       9: 'Click Me',
     })
-    setWinState([])
   }
 
   const renderGrid = () => {
     return Object.entries(space).map((space) => {
-      return <div onClick={()=>change(space[0])} style={{backgroundColor:`${winState.includes(parseInt(space[0]))?'green':''}`}} key={space[0]}>{space[1]}</div>;
+      return <div onClick={()=>change(space[0])} key={space[0]}><h3>{space[1]}</h3></div>;
     });
   };
+
+  const gameOver = ()=>(
+    <>
+      <h2>{winner} is the Winner</h2> 
+      <button style={{display:'flex',margin:"0 auto"}} onClick={()=>setShow(!show)}>Show Board</button>
+      {show?<div className="tic-tac-grid">{renderGrid()}</div>:null}
+    </>
+  )
 
   return (
     <div className="projectDiv">
       <h1>Tic Tac Toe</h1>
       <hr/>
       {winner? "" :<h2>Player {turn%2 === 0 ? "X's" : "O's"} Turn</h2>}
-      {winner? <h2>{winner} is the Winner</h2> :<div className="tic-tac-grid">{renderGrid()}</div>}
-      <button onClick={()=>reset()}>Reset Button</button>
+      {winner? gameOver() :<div className="tic-tac-grid">{renderGrid()}</div>}
+      <button style={{display:'flex',margin:"0 auto"}} onClick={()=>reset()}>Reset Button</button>
     </div>
   );
 }
