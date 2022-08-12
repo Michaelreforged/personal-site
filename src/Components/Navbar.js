@@ -11,7 +11,7 @@ import External from "../Components/external";
 const Navbar = () => {
   const {theme} = useContext(ThemeContext)
   return (
-    <div className={`theme-${theme}`}>
+    <div id="theme" className={`theme-${theme}`}>
     <div className="main">
       <div className="navDiv">
         <Link className="link" to="/">Home</Link>

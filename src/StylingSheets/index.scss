@@ -7,11 +7,9 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
   height: calc(100vh - 10px);
-  overscroll-behavior: none;
   @include theme-body($themes){
   background-color: themed('main-bg-color');
   }
-
 }
 code{
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
