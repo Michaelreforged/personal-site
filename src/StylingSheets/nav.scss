@@ -51,11 +51,11 @@ $text-offset: 10px;
     font-weight: 600;
   }
   @media screen and (max-width: $m-min-device) {
-    width: auto;
+    width: 100vw;
     flex-direction: row;
     flex-wrap: wrap;
     height: 6rem;
-    }
+  }
   select{
     font-weight: 600;
     font-size: larger;
@@ -64,8 +64,8 @@ $text-offset: 10px;
     @media screen and (max-width: $lg-min-device) {
       position: relative;
       right: auto;
-      }
     }
+  }
 }
 
 .outletDiv{
@@ -104,5 +104,11 @@ $text-offset: 10px;
   position: relative;
   @media screen and (max-width: $m-min-device) {
     width: 100vw;
+  }
+}
+
+.iconDiv{
+  :hover{
+    cursor: pointer;
   }
 }

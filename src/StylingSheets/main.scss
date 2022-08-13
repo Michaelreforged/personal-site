@@ -61,6 +61,15 @@ select{
   }
 }
 
+.icons {
+  margin: 10px;
+  path {
+    @include themify($themes){
+      fill: themed('nav-text-color')
+    }
+  }
+}
+
 .tic-tac-grid{
   border-width: 2px;
   border-style: solid;

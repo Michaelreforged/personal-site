@@ -1,5 +1,5 @@
 import React from "react";
-import External from "../Components/external";
+import External from "../Components/SVGs/external";
 import "../StylingSheets/main.scss"
 
 

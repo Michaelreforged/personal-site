@@ -1,7 +1,7 @@
 import React from "react";
 import { data } from "../Data/github_projects";
 import "../StylingSheets/main.scss";
-import External from "../Components/external";
+import External from "../Components/SVGs/external";
 
 const Home = () => {
   const renderProjects = () => {
