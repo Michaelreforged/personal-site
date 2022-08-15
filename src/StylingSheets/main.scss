@@ -1,6 +1,6 @@
 @use "./themify" as *;
 @use "./themes" as *;
-@use "./nav.scss" as *;
+@use "./div.scss" as *;
 @use "./project.scss" as *;
 @use "./grid.scss" as *;
 
@@ -51,18 +51,11 @@ select{
   }
 }
 
-.external{
-  width: 15px;
-  height: 15px;
-  line{
-    @include themify($themes){
-      stroke: themed('nav-text-color')
-    }
-  }
-}
-
 .icons {
-  margin: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 2rem;
+  width: 2rem;
   path {
     @include themify($themes){
       fill: themed('nav-text-color')
@@ -97,5 +90,12 @@ a{
   text-decoration: none;
   @include themify($themes){
     color: themed('text-color');
+  }
+}
+
+.pillDiv{
+  @include themify($themes){
+    background-color: themed('pill-color');
+    border: themed("pill-border");
   }
 }

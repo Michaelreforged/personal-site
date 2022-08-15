@@ -1,7 +1,7 @@
 import React from "react";
+import { PillDiv } from "../Components/StyleDivs";
 import { data } from "../Data/github_projects";
 import "../StylingSheets/main.scss";
-import External from "../Components/SVGs/external";
 
 const Home = () => {
   const renderProjects = () => {
@@ -13,10 +13,9 @@ const Home = () => {
           <p>{project.desciption}</p>
         </div>
         <hr />
-        <a href={project.link}>Link to Repo <External/></a>
-        <br />
+        <PillDiv url={project.link}>Link to Repo</PillDiv>
         {project.isLive ? (
-          <a href={project.link}>Link to Live Site on Heroku <External/></a>
+            <PillDiv url={project.link}>Link to Live Site on Heroku</PillDiv>
         ) : null}
       </div>
     ));

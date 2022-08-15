@@ -108,7 +108,16 @@ $text-offset: 10px;
 }
 
 .iconDiv{
-  :hover{
-    cursor: pointer;
-  }
+  cursor: pointer;
+}
+
+.pillDiv{
+  margin-top: 10px;
+  flex: auto;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 24px;
+  font-size: larger;
+  font-weight: 700;
+  cursor: pointer;
 }

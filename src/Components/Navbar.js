@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "../StylingSheets/main.scss";
 import { ThemeContext } from "../Providers/ThemeProvider";
 import ThemeDropDown from "./ThemeDropDown";
-import IconDiv from "./IconDiv";
+import { IconDiv } from "./StyleDivs";
 import GitHub from "./SVGs/GitHub";
 
 const Navbar = () => {
@@ -24,7 +24,7 @@ const Navbar = () => {
             About
           </Link>
           <IconDiv url="https://github.com/Michaelreforged">
-            <GitHub height='2rem' width='2rem'/>
+            <GitHub/>
           </IconDiv>
           <ThemeDropDown />
         </div>
