@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router";
 import Navbar from "./Components/Navbar";
-import About from "./Pages/About";
 import Demo from "./Pages/Demo";
-import Home from "./Pages/Home";
+import Projects from "./Pages/Projects";
 import NoMatch from "./Pages/NoMatch";
+import Home from "./Pages/Home";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Route element={<Navbar/>}>
         <Route index element={<Home/>}/>
         <Route path="/demos" element={<Demo/>}/>
-        <Route path="/about" element={<About/>}/>
+        <Route path="/projects" element={<Projects/>}/>
         <Route path="/*" element={<NoMatch/>}/>
         </Route>
       </Routes>

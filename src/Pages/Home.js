@@ -1,39 +1,22 @@
 import React from "react";
-import { PillDiv } from "../Components/StyleDivs";
-import { data } from "../Data/github_projects";
-import "../StylingSheets/main.scss";
+import { IconDiv } from "../Components/StyleDivs";
+import GitHub from "../Components/SVGs/GitHub";
+import LinkedIn from "../Components/SVGs/LinkedIn";
+import "../StylingSheets/main.scss"
+
 
 const Home = () => {
-  const renderProjects = () => {
-    return data.map((project) => (
-      <div className={`projectDiv`} key={project.id}>
-        <h2>{project.name}</h2>
-        <hr />
-        <div>
-          <p>{project.desciption}</p>
-        </div>
-        <hr />
-        <PillDiv url={project.link}>Link to Repo</PillDiv>
-        {project.isLive ? (
-            <PillDiv url={project.link}>Link to Live Site on Heroku</PillDiv>
-        ) : null}
-      </div>
-    ));
-  };
-  return (
-    <>
+  return(
+    <div>
       <h1> Welcome to Michael Cheung's Portfolio Site.</h1>
-      <hr />
-      <p>
-        {" "}
-        Please see below for some of the projects that I have worked on/is
-        currently working on. Demos are currently in progess but will be filled
-        out with react components to do stuff.
-      </p>
-      <h1> Projects and GitHub Repos</h1>
-      <div className="containerDiv">{renderProjects()}</div>
-    </>
-  );
+      <hr/>
+      <p>Hello, I'm Michael Cheung. I graduated from the University of Utah with a B.S. in Chemical Engineering. I learned the basics of web development thru DevPoints Labs full stack web development course. Current languages that I know are Ruby and JavaScript, with the Ruby on Rails as my stack.</p>
+      <div style={{display:"flex",justifyContent:"center"}}>
+      <IconDiv url={"https://github.com/Michaelreforged"}><GitHub/></IconDiv>
+      <IconDiv url={"https://www.linkedin.com/in/michael-cheung-dev/"}><LinkedIn/></IconDiv>
+      </div>
+    </div>
+  )
 };
 
 export default Home;
