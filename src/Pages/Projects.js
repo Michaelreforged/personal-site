@@ -16,7 +16,7 @@ const Projects = () => {
         <div style={{display:"flex",flexDirection:"row",width:"fit-content"}}>
           <PillDiv url={project.link}>Link to Repo</PillDiv>
           {project.isLive ? (
-            <PillDiv url={project.link}>Link to Live Site on Heroku</PillDiv>
+            <PillDiv url={project.hosting}>Link to Live Site on Heroku</PillDiv>
           ) : null}
         </div>
       </div>
